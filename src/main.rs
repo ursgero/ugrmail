@@ -10,7 +10,7 @@ use clap::{App, Arg};
 use lettre::{transport::smtp::authentication::Credentials, Message, SmtpTransport, Transport};
 
 fn main() -> std::io::Result<()> {
-    let mut app = App::new("My Program")
+    let mut app = App::new("ugrmail")
         .version("1.0")
         .about("Sends an email using SMTP")
         .arg(
